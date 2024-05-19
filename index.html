@@ -33,32 +33,14 @@
             height: 100%;
             border: none;
         }
-
-        #play-button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
     </style>
 </head>
 
 <body>
     <div id="video-container">
-        <button id="play-button" onclick="playVideo()">Play</button>
-        <iframe id="video-iframe" src="https://www.youtube.com/embed/nxa8QVStM0Q?autoplay=1" allow="autoplay"
-            style="display:none;"></iframe>
+        <iframe id="video-iframe" src="https://www.youtube.com/embed/nxa8QVStM0Q?autoplay=1&fs=1&autohide=1"
+            allow="autoplay" allowfullscreen></iframe>
     </div>
-    <script>
-        function playVideo() {
-            document.getElementById('play-button').style.display = 'none';
-            var iframe = document.getElementById('video-iframe');
-            iframe.style.display = 'block';
-        }
-    </script>
 </body>
 
 </html>
